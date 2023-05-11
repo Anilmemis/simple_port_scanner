@@ -32,8 +32,8 @@ def main():
     else:
         print("[-] Usage: " + str(sys.argv[0]) + "<vuln filename>")
         exit(0)
-    portlist = range(1,63000)
-    for x in range(135,139):
+    portlist = range(1,100) # change for yourself
+    for x in range(135,139):# change for yourself
         ip = "1.1.1."+str(x) #enter the target ip adr or domain and up to range in change limitted
         for port in portlist:
             banner = retBanner(ip,port)
